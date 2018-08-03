@@ -290,14 +290,22 @@ main .metaBottom {
 
 #projectOne,
 .projectPreview video {
-    top: 32px;
+    top: 28px;
 }
 
 video {
     position: absolute;
-    right: 28.5px; // top: 60px;
-    width: 44px;
+    right: 24.5px; // top: 60px;
+    width: 35px;
 }
+
+#projectOne,
+.d0nly {
+    opacity: 0;
+}
+
+
+
 
 footer {
     padding: 40px 16px;
@@ -453,7 +461,7 @@ color: #dadada;
 margin-bottom: 3rem;
 }
 .style_prevu_kit:hover {
-    box-shadow: 0px 0px 150px #0000002d;
+    box-shadow: 0px 0px 150px -5px #BBBABC;
     z-index: 2;
     -webkit-transition: all 200ms ease-in;
     -webkit-transform: scale(1.2);
