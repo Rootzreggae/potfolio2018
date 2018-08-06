@@ -178,6 +178,12 @@ h1 {
     width: 100%;
 }
 
+img {
+    width: auto ;
+    max-width: 100% ;
+    height: auto ;
+  } 
+
 @media only screen and (min-width: 768px) {
     .one {
         width: 100%;
@@ -262,7 +268,7 @@ main article {
     justify-content: space-between;
 }
 
-#projectTwo .projectPreview {
+#projectTwo .projectPreviewt {
     position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -277,6 +283,10 @@ main article {
 }
 
 main .projectPreview {
+    padding-top: 8px;
+}
+
+main .projectPreviewt {
     padding-top: 8px;
 }
 
@@ -382,15 +392,12 @@ main .metaBottom {
     background-size: cover;
 }
 
-// #projectOne,
-// .projectPreview video {
-//     top: 28px;
-// }
+
 video {
     position: absolute;
-    right: 8.5px; // top: 60px;
-    width: 69px;
-    top: 28px;
+    right: 6.5px; // top: 60px;
+    width: 63px;
+    top: 24px;
 }
 
 footer {
@@ -511,14 +518,12 @@ ul {
         margin-top: 3rem;
         margin-bottom: 3rem;
     }
-    #projectOne,
-    .projectPreview video {
-        top: 59px;
-    }
-    video {
+ 
+    .d0nly, video {
         position: absolute;
-        right: 24.5px;
+        right: 23.5px;
         width: 203px;
+        top: 55px;
     }
     footer .footerLinks,
     ul {
@@ -683,11 +688,3 @@ p a {
     font-family: 'Raleway', sans-serif;
     font-size: 21px;
 }
-
-// #projectTwo,
-// .pHero {
-//     background-image: url(https://i.imgur.com/mNOL7D4.png);
-//     background-size: contain;
-//     background-repeat: no-repeat;
-//     background-position: center; // background-color: pink;
-// }
