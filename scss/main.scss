@@ -179,10 +179,11 @@ h1 {
 }
 
 img {
-       
-    max-width: 100% ;
-    height: auto ;
-  } 
+    width: 100%;
+    height: auto;
+}
+
+
 
 @media only screen and (min-width: 768px) {
     .one {
@@ -203,16 +204,17 @@ img {
     .column {
         float: left;
     }
-
     img {
-       
-        max-width: 100% ;
-        height: auto ;
-      } 
-
+        width: 100%;
+        height: auto;
+    }
+    img,
+    video {
+        max-height: 500px;
+    }
 
    
-   
+    
 }
 
 .mono {
@@ -386,7 +388,7 @@ main .metaBottom {
     position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
+    display: inline;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
@@ -397,17 +399,11 @@ main .metaBottom {
     overflow: hidden;
 }
 
-.fond img {
-    max-width: 800px; // height: auto;
-    background-size: cover;
-}
-
-
 video {
     position: absolute;
     right: 6.5px; // top: 60px;
-    width: 63px;
-    top: 24px;
+    width: 73px;
+    top: 25px;
 }
 
 footer {
@@ -471,12 +467,6 @@ ul {
     list-style: none;
 }
 
-
-
-
-
-
-
 @media screen and (min-width: 768px) {
     /* Desktop styles go here */
     h1 {
@@ -534,8 +524,8 @@ ul {
         margin-top: 3rem;
         margin-bottom: 3rem;
     }
- 
-    .d0nly, video {
+    .d0nly,
+    video {
         position: absolute;
         right: 23.5px;
         width: 203px;
@@ -592,7 +582,7 @@ ul {
 .style_prevu_kit {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
+    // display: flex;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
@@ -677,8 +667,8 @@ ul {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
 }
 
 .t3xt a {
